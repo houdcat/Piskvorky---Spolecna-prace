@@ -77,7 +77,7 @@ public class ArrayChecker {
                             if (plocha[x][x].getObsah() != obsahPole) {
                                 break;
                             }
-                            if (x == 2) {
+                            if (x == 0) {
                                 return true;
                             }
                         }
