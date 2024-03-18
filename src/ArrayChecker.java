@@ -73,7 +73,7 @@ public class ArrayChecker {
                     }
                     //levo-nahodu
                     if (i == 2 && z == 2) {
-                        for (int x = 2; x >= 0; x++) {
+                        for (int x = 2; x >= 0; x--) {
                             if (plocha[x][x].getObsah() != obsahPole) {
                                 break;
                             }
