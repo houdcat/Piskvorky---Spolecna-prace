@@ -8,7 +8,6 @@ public class ArrayChecker {
 
          */
 
-
         //Projíždí sloupce
         for (int i = 0; i < 3; i++) {
             //Projíždí řádky
@@ -56,6 +55,29 @@ public class ArrayChecker {
                                 break;
                             }
                             if (b == 2) {
+                                return true;
+                            }
+                        }
+                    }
+                    //šikmo
+                    //pravo-dolu
+                    if (i == 0 && z == 0) {
+                        for (int c = 0; c <= 2; c++) {
+                            if (plocha[c][c].getObsah() != obsahPole) {
+                                break;
+                            }
+                            if (c == 2) {
+                                return true;
+                            }
+                        }
+                    }
+                    //levo-nahodu
+                    if (i == 2 && z == 2) {
+                        for (int x = 2; x >= 0; x++) {
+                            if (plocha[x][x].getObsah() != obsahPole) {
+                                break;
+                            }
+                            if (x == 2) {
                                 return true;
                             }
                         }
